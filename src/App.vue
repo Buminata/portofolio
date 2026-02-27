@@ -6,10 +6,10 @@
     <nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen backdrop-blur-md bg-[#121212] bg-opacity-80">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
         <button @click="redirectToHome" class="flex">
-          <span class="self-center text-lg text-[#ffdb70] font-semibold whitespace-nowrap fadein-bot hover:text-amber-100">bagasRakha();</span>
+          <span class="self-center text-lg text-[#ffdb70] font-semibold whitespace-nowrap fadein-bot hover:text-amber-100">buminata();</span>
         </button>
         <div class="flex md:order-2 fadein-bot">
-          <a href="https://github.com/rakha-elctrnx"><img class="w-9 rounded-full" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="github"></a>
+          <a href="https://github.com/buminata"><img class="w-9 rounded-full" src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="github"></a>
         </div>
         <div class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1" id="mobile-menu-3">
           <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
@@ -28,7 +28,11 @@
             </li>
             <li>
               <router-link to="/blog"
-                class="fadein-bot fadein-3 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 blog">Blog</router-link>
+                class="fadein-bot fadein-3 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0 blog">Publication</router-link>
+            </li>
+            <li>
+              <router-link to="/certificate"
+                class="fadein-bot fadein-4 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">Certificate</router-link>
             </li>
           </ul>
         </div>
@@ -44,7 +48,8 @@
     <router-link to="/" class="text-gray-300 hover:text-white">Home</router-link>
     <router-link to="/about" class="text-gray-300 hover:text-white">About</router-link>
     <router-link to="/portfolio" class="text-gray-300 hover:text-white">Portfolio</router-link>
-    <router-link to="/blog" class="text-gray-300 hover:text-white">Blog</router-link>
+    <router-link to="/blog" class="text-gray-300 hover:text-white">Publication</router-link>
+    <router-link to="/certificate" class="text-gray-300 hover:text-white">Certificate</router-link>
   </nav>
 </footer>
 </template>
@@ -137,5 +142,26 @@ nav a.router-link-exact-active:hover {
     transform: translateX(0);
   }
 }
+
+.fadein-bot {
+  opacity: 0;
+  animation: fadeInBot 0.5s forwards;
+}
+
+@keyframes fadeInBot {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadein-1 { animation-delay: 200ms; }
+.fadein-2 { animation-delay: 400ms; }
+.fadein-3 { animation-delay: 600ms; }
+.fadein-4 { animation-delay: 800ms; }
 
 </style>

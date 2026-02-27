@@ -6,48 +6,30 @@ export default {
       items: [
         {
           id: 1,
-          name: 'Personal Website',
-          imageUrl: 'portfolio_v2',
-          status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
-          tech: 'VueJS 3, Tailwind',
-          github: 'https://github.com/rakha-elctrnx/Portofolio-v2',
-          demo: 'https://bagasrakha.netlify.app/'
+          name: 'Nurul Iman - Islamic Path',
+          imageUrl: 'nurul_iman',
+          status: 'Modern Islamic education platform for Quranic studies, Seerah of the Prophet and Sahaba, and Islamic history featuring an elegant interface.',
+          tech: 'Next.js, Tailwind CSS, AI Integration',
+          github: 'https://github.com/Buminata/nurul_iman',
+          demo: 'https://nurul-iman-islam-path.vercel.app/'
         },
         {
           id: 2,
-          name: 'Sahabat Muslim',
-          imageUrl: 'sahabatmuslim',
-          status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
-          tech: 'VueJS 3, Tailwind',
-          github: 'https://github.com/rakha-elctrnx/muslim-companion',
-          demo: 'https://sahabat-muslim.netlify.app/'
+          name: 'UpSkill - Tech Learning Center',
+          imageUrl: 'upskill',
+          status: 'Tech Learning Center platform offering IT courses from Front-end to Data Analytics with professional mentorship.',
+          tech: 'React, Tailwind CSS, Vercel',
+          github: 'https://github.com/Buminata/Upskill',
+          demo: 'https://upskill-gules.vercel.app/'
         },
         {
           id: 3,
-          name: 'SISTEKDES',
-          imageUrl: 'sistekdes',
-          status: 'Sistem Informasi dan Teknologi Desa, a web application to assist village government work in administration, population data management, community services, etc.',
-          tech: 'Laravel 9, Bootstrap',
-          github: 'null',
-          demo: 'null'
-        },
-        {
-          id: 4,
-          name: 'Bumdesma',
-          imageUrl: 'bumdesma',
-          status: 'a web application used by village-owned enterprises at the sub-district level to make it easier for them in terms of accounting that is equipped with a microfinance balance.',
-          tech: 'Laravel 8, Bootstrap',
-          github: 'null',
-          demo: 'null'
-        },
-        {
-          id: 5,
-          name: 'SP2SE',
-          imageUrl: 'sp2se',
-          status: 'Sistem Percepatan Pelayanan Surat Elektronik, A web application to manage letters in the village.',
-          tech: 'Codeigniter 3, Bootstrap',
-          github: 'null',
-          demo: 'null'
+          name: 'Badminton Reservation System',
+          imageUrl: 'badminton_system',
+          status: 'Online badminton court reservation system (Daddies Arena) featuring real-time schedule monitoring and automated booking workflows.',
+          tech: 'Bootstrap, JavaScript, Vercel',
+          github: 'https://github.com/Buminata/sistem-reservasi-badminton',
+          demo: 'https://sistem-reservasi-badminton.vercel.app/'
         }
       ]
     };
@@ -73,12 +55,14 @@ export default {
               <div
                 class="item-card flex flex-col items-center gap-2 rounded bg-[#1e1e1f] hover:bg-[#282828] border border-[#383838] rounded-xl text-amber-50 md:gap-3 px-5 py-5 lg:px-5 ">
                 <div class="flex h-12 w-12 items-center justify-center p-0 h-full w-full lg:p-0 zoom-in">
-                  <img alt="HTML" loading="lazy" decoding="async" data-nimg="1" class="drop-shadow-xl rounded rounded-xl"
-                    :src="'/img/portfolio-' + item.imageUrl + '.png'">
+                  <a :href="item.demo" target="_blank" rel="noreferrer" class="w-full">
+                    <img alt="HTML" loading="lazy" decoding="async" data-nimg="1" class="drop-shadow-xl rounded rounded-xl w-full"
+                      :src="'/img/portfolio-' + item.imageUrl + '.png'">
+                  </a>
                 </div>
                 <div class="w-full flex flex-col gap-2 items-center text-sm md:text-base lg:text-lg">
-                  <div class="title-text font-medium text-secondary">{{ item.name }}
-                  </div>
+                  <a :href="item.demo" target="_blank" rel="noreferrer" class="title-text font-medium text-secondary hover:text-amber-200 transition-colors cursor-pointer">{{ item.name }}
+                  </a>
                   <div class="w-full text-left text-[10px] text-[#c1c1c1] md:text-xs lg:text-sm">
                     {{ item.status }}</div>
                   <div class="w-full mt-4 text-normal text-sm text-left text-amber-200">

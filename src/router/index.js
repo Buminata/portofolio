@@ -31,6 +31,12 @@ const routes = [
     name: 'articleDetail',
     component: () => import('../views/ArticleView.vue'),
     meta: { title: 'Blog' }
+  },
+  {
+    path: '/certificate',
+    name: 'certificate',
+    component: () => import('../views/CertificateView.vue'),
+    meta: { title: 'Certificate' }
   }
 ]
 
@@ -40,7 +46,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title + ' - bagasRakha();'; // Mengambil judul dari meta atau mengatur judul default jika tidak ada
+  document.title = to.meta.title + ' - buminata();'; // Mengambil judul dari meta atau mengatur judul default jika tidak ada
   next();
 });
 
