@@ -6,6 +6,15 @@ export default {
       items: [
         {
           id: 1,
+          name: 'Personal Portfolio v2',
+          imageUrl: 'portfolio_v2',
+          status: 'Professional portfolio website showcasing expertise in Information Systems, Data Analytics, and Full-stack Development.',
+          tech: 'Vue.js, Tailwind CSS, Vite',
+          github: 'https://github.com/Buminata/portofolio',
+          demo: 'https://portofolio-iota-eight-56.vercel.app/'
+        },
+        {
+          id: 2,
           name: 'Nurul Iman - Islamic Path',
           imageUrl: 'nurul_iman',
           status: 'Modern Islamic education platform for Quranic studies, Seerah of the Prophet and Sahaba, and Islamic history featuring an elegant interface.',
@@ -14,7 +23,7 @@ export default {
           demo: 'https://nurul-iman-islam-path.vercel.app/'
         },
         {
-          id: 2,
+          id: 3,
           name: 'UpSkill - Tech Learning Center',
           imageUrl: 'upskill',
           status: 'Tech Learning Center platform offering IT courses from Front-end to Data Analytics with professional mentorship.',
@@ -23,7 +32,7 @@ export default {
           demo: 'https://upskill-gules.vercel.app/'
         },
         {
-          id: 3,
+          id: 4,
           name: 'Badminton Reservation System',
           imageUrl: 'badminton_system',
           status: 'Online badminton court reservation system (Daddies Arena) featuring real-time schedule monitoring and automated booking workflows.',
