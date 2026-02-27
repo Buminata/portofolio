@@ -25,3 +25,18 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di mesin lokal k
 Pastikan kamu sudah menginstal Node.js, lalu jalankan:
 ```bash
 npm install
+### 2. Jalankan Mode Pengembangan
+Untuk melihat perubahan secara real-time (hot-reload):
+npm run serve
+Buka http://localhost:8080 di browser kamu.
+### 3. Build untuk Produksi
+Untuk melakukan minifikasi dan optimasi aset sebelum dideploy:
+npm run build
+### 4. Linting
+Untuk memeriksa dan memperbaiki kesalahan penulisan kode (syntax/style):
+npm run lint
+⚙️ Konfigurasi
+Lihat Configuration Reference.
+📄 Lisensi
+Proyek ini dibuat untuk tujuan portofolio pribadi. Silakan gunakan sebagai referensi.
+
