@@ -39,6 +39,15 @@ export default {
           tech: 'Bootstrap, JavaScript, Vercel',
           github: 'https://github.com/Buminata/sistem-reservasi-badminton',
           demo: 'https://sistem-reservasi-badminton.vercel.app/'
+        },
+        {
+          id: 5,
+          name: 'Buminata IDX Quantum Predictor',
+          imageUrl: 'buminata_idx',
+          status: 'Advanced platform for Indonesia Stock Exchange (IDX) forecasting and analysis using real-time data and Deep Learning models.',
+          tech: 'Python, Streamlit, Deep Learning',
+          github: 'https://github.com/Buminata/Buminata-IDX-Quantum-Predictor',
+          demo: 'https://buminata-idx-quantum-predictor.streamlit.app/'
         }
       ]
     };
